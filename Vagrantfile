@@ -19,7 +19,6 @@ Vagrant.configure("2") do |config|
       v.customize ["modifyvm", :id, "--ioapic", "on"]
     end
 
-    config.vm.provision "shell", inline: "echo Hello, World"
+    config.vm.provision "shell", inline: "cat /etc/centos-release;uname -a"
   end
-
 end
