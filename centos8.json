@@ -31,11 +31,10 @@
       "headless": true,
       "http_directory": "http",
       "iso_urls": [
-        "TODO.iso",
-        "http://mirrors.mit.edu/centos/8/isos/x86_64/TODO.iso"
-      ],
+        "CentOS-8-x86_64-1905-boot.iso",
+        "https://mirror.ams1.nl.leaseweb.net/centos/8/isos/x86_64/CentOS-8-x86_64-1905-boot.iso"],
       "iso_checksum_type": "sha256",
-      "iso_checksum": "TODO",
+      "iso_checksum": "a7993a0d4b7fef2433e0d4f53530b63c715d3aadbe91f152ee5c3621139a2cbc",
       "ssh_username": "vagrant",
       "ssh_password": "vagrant",
       "ssh_port": 22,
@@ -65,11 +64,6 @@
       {
         "output": "builds/{{.Provider}}-centos8.box",
         "type": "vagrant"
-      },
-      {
-        "type": "vagrant-cloud",
-        "box_tag": "geerlingguy/centos8",
-        "version": "{{user `version`}}"
       }
     ]
   ]
